@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.FirstFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_first" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.ingredientFragments.list.SecondFragment"
+        android:label="Ingredients"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_addIngredientFragment"
+            app:destination="@id/addIngredientFragment" />
+        <action
+            android:id="@+id/action_secondFragment_to_updateIngredientFragment"
+            app:destination="@id/updateIngredientFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.ThirdFragment"
+        android:label="Recipes"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/fourthFragment"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.FourthFragment"
+        android:label="Shopping List"
+        tools:layout="@layout/fragment_fourth" />
+    <fragment
+        android:id="@+id/addIngredientFragment"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.ingredientFragments.add.AddIngredientFragment"
+        android:label="Add Ingredient"
+        tools:layout="@layout/fragment_add_ingredient" >
+        <action
+            android:id="@+id/action_addIngredientFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/updateIngredientFragment"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.ingredientFragments.update.UpdateIngredientFragment"
+        android:label="Update Ingredient" >
+        <action
+            android:id="@+id/action_updateIngredientFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <argument
+            android:name="currentItem"
+            app:argType="org.ay.gcu.honoursprojectkotlinversion.IngredientsModel.Ingredient" />
+
+    </fragment>
+</navigation>
