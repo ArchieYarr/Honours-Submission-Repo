@@ -13,11 +13,8 @@
 
     <item
             android:id="@+id/thirdFragment"
-            android:title="Recipes"
+            android:title="Survey"
             android:icon="@drawable/ic_recipes"/>
 
-    <item
-            android:id="@+id/fourthFragment"
-            android:title="Shopping List"
-            android:icon="@drawable/ic_baseline_shopping_basket_24"/>
+
 </menu>

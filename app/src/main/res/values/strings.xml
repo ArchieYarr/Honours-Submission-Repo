@@ -1,6 +1,22 @@
 <resources>
     <string name="app_name">Honours Project Kotlin version</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fourth_fragment">Fourth Fragment</string>
+
+    <string name = "home_welcome">Hello! Welcome to your ingredient tracking application.</string>
+    <string name="LandingPageguide1">You can add, edit and remove ingredients you have in your kitchen on the ingredients page!</string>
+    <string name="LandingPageguide2">You can give feedback of your attitudes towards food waste and the application on the survey page.</string>
+
+    <string name="SurveyTitle1">Attitudes to consumer food Waste</string>
+    <string name="SurveyTitle2">Attitudes to your food Waste</string>
+    <string-array name="question1">
+        <item>Strongly Agree</item>
+        <item>Agree</item>
+        <item>Unsure</item>
+        <item>Disagree</item>
+        <item>Strongly Disagree</item>
+
+    </string-array>
+
 </resources>
