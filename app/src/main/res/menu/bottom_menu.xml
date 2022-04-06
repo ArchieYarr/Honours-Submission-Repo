@@ -11,10 +11,15 @@
             android:title="Ingredients"
             android:icon="@drawable/ic_ingredients"/>
 
+
     <item
             android:id="@+id/thirdFragment"
             android:title="Survey"
-            android:icon="@drawable/ic_recipes"/>
+            android:icon="@drawable/ic_survey"/>
+    <item
+        android:id="@+id/fourthFragment"
+        android:title="Recipes"
+        android:icon="@drawable/ic_recipes"/>
 
 
 </menu>

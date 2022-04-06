@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="org.ay.gcu.honoursprojectkotlinversion.ThirdFragment"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.surveyFragments.ThirdFragment"
         android:label="Survey"
         tools:layout="@layout/fragment_third" />
     <fragment
