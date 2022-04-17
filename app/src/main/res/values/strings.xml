@@ -4,7 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fourth_fragment">Fourth Fragment</string>
 
-    <string name = "home_welcome">Hello! Welcome to your ingredient tracking application.</string>
+    <string name="home_welcome">Hello! Welcome to your ingredient tracking application.</string>
     <string name="LandingPageguide1">You can add, edit and remove ingredients you have in your kitchen on the ingredients page!</string>
     <string name="LandingPageguide2">You can give feedback of your attitudes towards food waste and the application on the survey page.</string>
 

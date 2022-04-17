@@ -30,9 +30,16 @@
         tools:layout="@layout/fragment_third" />
     <fragment
         android:id="@+id/fourthFragment"
-        android:name="org.ay.gcu.honoursprojectkotlinversion.FourthFragment"
-        android:label="Shopping List"
-        tools:layout="@layout/fragment_fourth" />
+        android:name="org.ay.gcu.honoursprojectkotlinversion.recipeFragments.FourthFragment"
+        android:label="Recipes"
+        tools:layout="@layout/fragment_fourth" >
+        <action
+            android:id="@+id/action_fourthFragment_to_viewRecipe"
+            app:destination="@id/viewRecipe" />
+        <action
+            android:id="@+id/action_fourthFragment_to_addRecipe"
+            app:destination="@id/addRecipe" />
+    </fragment>
     <fragment
         android:id="@+id/addIngredientFragment"
         android:name="org.ay.gcu.honoursprojectkotlinversion.ingredientFragments.add.AddIngredientFragment"
@@ -54,5 +61,26 @@
             android:name="currentItem"
             app:argType="org.ay.gcu.honoursprojectkotlinversion.IngredientsModel.Ingredient" />
 
+    </fragment>
+    <fragment
+        android:id="@+id/viewRecipe"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.recipeFragments.ViewRecipe"
+        android:label="View Recipe"
+        tools:layout="@layout/fragment_view_recipe">
+        <action
+            android:id="@+id/action_viewRecipe_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
+        <argument
+            android:name="currentRecipeItem"
+            app:argType="org.ay.gcu.honoursprojectkotlinversion.recipeModel.Recipe" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRecipe"
+        android:name="org.ay.gcu.honoursprojectkotlinversion.recipeFragments.AddRecipe"
+        android:label="fragment_add_recipe"
+        tools:layout="@layout/fragment_add_recipe" >
+        <action
+            android:id="@+id/action_addRecipe_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
     </fragment>
 </navigation>

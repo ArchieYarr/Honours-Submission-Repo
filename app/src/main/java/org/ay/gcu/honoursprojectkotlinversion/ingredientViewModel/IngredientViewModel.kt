@@ -3,6 +3,7 @@ package org.ay.gcu.honoursprojectkotlinversion.ingredientViewModel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -43,4 +44,6 @@ class IngredientViewModel(application: Application) : AndroidViewModel(applicati
             repository.deleteAllIngredients()
         }
     }
+
+
 }

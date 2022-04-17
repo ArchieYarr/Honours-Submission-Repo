@@ -2,6 +2,7 @@ package org.ay.gcu.honoursprojectkotlinversion.data
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import kotlinx.coroutines.flow.Flow
 import org.ay.gcu.honoursprojectkotlinversion.IngredientsModel.Ingredient
 
 @Dao
@@ -23,4 +24,6 @@ interface IngredientDao {
 
         @Query("SELECT * FROM ingredient_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<Ingredient>>
+
+
 }

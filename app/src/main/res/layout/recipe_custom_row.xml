@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:id="@+id/recipeRowLayout">
 
     <TextView
-        android:id="@+id/recipeID"
+        android:id="@+id/recipeIDtxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1"
-        android:textSize="40sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,16 +22,18 @@
         app:layout_constraintVertical_bias="0.666" />
 
     <TextView
-        android:id="@+id/recipeName"
+        android:id="@+id/recipeNametxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Carrot Soup"
-        android:textSize="40sp"
+        android:textSize="20sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/recipeID"
+        app:layout_constraintStart_toEndOf="@+id/recipeIDtxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

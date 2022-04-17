@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.custom_row_ingredient.view.*
 import org.ay.gcu.honoursprojectkotlinversion.R
 import org.ay.gcu.honoursprojectkotlinversion.IngredientsModel.Ingredient
+import org.ay.gcu.honoursprojectkotlinversion.recipeModel.Recipe
 
 class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 

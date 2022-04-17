@@ -1,6 +1,7 @@
 package org.ay.gcu.honoursprojectkotlinversion.ingredientRepository
 
 import androidx.lifecycle.LiveData
+import kotlinx.coroutines.flow.Flow
 import org.ay.gcu.honoursprojectkotlinversion.IngredientsModel.Ingredient
 import org.ay.gcu.honoursprojectkotlinversion.data.IngredientDao
 
@@ -23,5 +24,7 @@ class IngredientRepository(private val ingredientDao: IngredientDao) {
     suspend fun deleteAllIngredients(){
         ingredientDao.deleteAllIngredients()
     }
+
+
 
 }
