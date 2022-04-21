@@ -7,6 +7,7 @@
     <string name="home_welcome">Hello! Welcome to your ingredient tracking application.</string>
     <string name="LandingPageguide1">You can add, edit and remove ingredients you have in your kitchen on the ingredients page!</string>
     <string name="LandingPageguide2">You can give feedback of your attitudes towards food waste and the application on the survey page.</string>
+    <string name="LandingPageguide3">You can add,edit and view your recipes on the recipe page</string>
 
     <string name="SurveyTitle1">Attitudes to consumer food Waste</string>
     <string name="SurveyTitle2">Attitudes to your food Waste</string>
